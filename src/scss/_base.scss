@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  color: white;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  line-height: 1.6667;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(45deg, #3080e8, lighten(#3080e8, 20%)) center center no-repeat;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:focus, &:hover {
+    text-decoration: underline;
+  }
+}

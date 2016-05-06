@@ -1,0 +1,20 @@
+/// Display links to social medias as an inline-list with icons
+
+.social-medias {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.social-medias__item {
+  display: inline-block;
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-medias__icon {
+  margin-right: 5px;
+}
