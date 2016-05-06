@@ -4,7 +4,7 @@
   "description": "My personal website",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "npm run build && node server.js",
     "build": "NODE_ENV=production webpack --config webpack.config.js -p --bail",
     "devel": "webpack-dev-server --config webpack.config.js --content-base app --open --hot --inline"
   },
