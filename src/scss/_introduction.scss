@@ -1,8 +1,12 @@
 .introduction {
-  margin: 0 0 1em;
+  margin: 0 0 .5em;
   font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;;
   text-align: center;
   line-height: .9;
+}
+
+.introduction__large, .introduction__small {
+  overflow: hidden;
 }
 
 .introduction__large {
@@ -12,7 +16,7 @@
 }
 
 .introduction__small {
-  display: block;
+  display: inline;
   font-size: 48px;
   line-height: 1;
 }
