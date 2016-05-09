@@ -3,16 +3,14 @@
 .social-medias {
   padding: 0;
   list-style: none;
+  font-size: 0;
   text-align: center;
 }
 
 .social-medias__item {
   display: inline-block;
-  margin-right: 12px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  margin: 0 8px;
+  font-size: 1rem;
 }
 
 .social-medias__icon {
