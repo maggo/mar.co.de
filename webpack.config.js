@@ -18,7 +18,8 @@ module.exports = [
   {
     name: 'js',
     entry: {
-      icons: path.join(paths.src, 'js/icons.js')
+      icons: path.join(paths.src, 'js/icons.js'),
+      main: path.join(paths.src, 'js/main.js')
     },
     output: {
       path: paths.dist,
