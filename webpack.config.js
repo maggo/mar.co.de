@@ -26,7 +26,7 @@ module.exports = [
     output: {
       path: paths.dist,
       publicPath: '/assets/',
-      filename: "[name].bundle.js"
+      filename: "[name].bundle.[hash].js"
     },
     module: {
       loaders: [
