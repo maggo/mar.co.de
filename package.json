@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "npm run build && node server.js",
-    "build": "NODE_ENV=production webpack --config webpack.config.js -p --bail",
+    "build": "NODE_ENV=production webpack --config webpack.config.js -p --bail && cpx ./resume.pdf dist",
     "devel": "webpack-dev-server --config webpack.config.js --content-base dist --open --hot --inline"
   },
   "author": "Marco Kaul <marcokaul@gmail.com>",
@@ -16,6 +16,7 @@
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
+    "cpx": "^1.5.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.21.0",
