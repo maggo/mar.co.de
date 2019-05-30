@@ -7,17 +7,16 @@
 
 .largeTitle,
 .smallTitle {
-  overflow: hidden;
+  display: block;
+  text-align: center;
 }
 
 .largeTitle {
-  display: block;
   font-size: 11.11rem;
   line-height: 0.8;
 }
 
 .smallTitle {
-  display: inline;
   font-size: 2.667rem;
   line-height: 1;
 }

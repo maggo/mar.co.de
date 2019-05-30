@@ -14,6 +14,7 @@
     "@types/react": "^16.8.19",
     "@types/svg-sprite-loader": "^3.9.1",
     "@zeit/next-css": "^0.2.1-canary.4",
+    "autoprefixer": "^9.5.1",
     "imagemin-svgo": "^7.0.0",
     "next": "^8.1.1-canary.40",
     "next-compose-plugins": "^2.2.0",

@@ -7,7 +7,11 @@ module.exports = withPlugins([
   [
     withCSS,
     {
-      cssModules: true
+      cssModules: true,
+      cssLoaderOptions: {
+        importLoaders: 1,
+        localIdentName: "[name]__[local]--[hash:base64:5]"
+      }
     }
   ],
   optimizedImages,
