@@ -4,7 +4,7 @@
   "description": "My personal website",
   "scripts": {
     "start": "next",
-    "build": "next build && next export"
+    "build": "next build && next export -o dist/"
   },
   "author": "Marco Kaul <marcokaul@gmail.com>",
   "license": "ISC",

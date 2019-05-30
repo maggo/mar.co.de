@@ -3,4 +3,4 @@
 
 # Next build dirs
 /.next
-/out
+/dist
