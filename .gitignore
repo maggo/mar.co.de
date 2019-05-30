@@ -4,3 +4,6 @@
 # Next build dirs
 /.next
 /dist
+
+# Netlify build dirs
+/.netlify
