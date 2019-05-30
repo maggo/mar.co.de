@@ -1,10 +1,12 @@
 html {
   height: 100%;
-  font-size: 18px;
+  font-size: 112.5%;
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -19,14 +21,24 @@ body {
   font-family: Helvetica Neue, Helvetica, sans-serif;
   line-height: 1.6667;
   -webkit-font-smoothing: antialiased;
-  background: linear-gradient(45deg, #3080e8, lighten(#3080e8, 20%)) center center no-repeat;
+  background: linear-gradient(45deg, #3080e8, #8cb8f2) center center no-repeat;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
 
-  &:focus, &:hover {
-    text-decoration: underline;
-  }
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul,
+ol {
+  margin: 0 0 1rem;
 }
