@@ -1,2 +1,9 @@
 /node_modules
+.DS_Store
+
+# Next build dirs
+/.next
 /dist
+
+# Netlify build dirs
+/.netlify

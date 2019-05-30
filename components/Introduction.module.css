@@ -1,0 +1,22 @@
+.container {
+  margin: 0 0 0.5em;
+  font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 0.9;
+}
+
+.largeTitle,
+.smallTitle {
+  display: block;
+  text-align: center;
+}
+
+.largeTitle {
+  font-size: 11.11rem;
+  line-height: 0.8;
+}
+
+.smallTitle {
+  font-size: 2.667rem;
+  line-height: 1;
+}
