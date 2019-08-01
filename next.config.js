@@ -3,17 +3,24 @@ const withPlugins = require("next-compose-plugins");
 const optimizedImages = require("next-optimized-images");
 const withOffline = require("next-offline");
 
-module.exports = withPlugins([
+module.exports = withPlugins(
   [
-    withCSS,
-    {
-      cssModules: true,
-      cssLoaderOptions: {
-        importLoaders: 1,
-        localIdentName: "[name]__[local]--[hash:base64:5]"
+    [
+      withCSS,
+      {
+        cssModules: true,
+        cssLoaderOptions: {
+          importLoaders: 1,
+          localIdentName: "[name]__[local]--[hash:base64:5]"
+        }
       }
-    }
+    ],
+    optimizedImages,
+    withOffline
   ],
-  optimizedImages,
-  withOffline
-]);
+  {
+    experimental: {
+      modern: true
+    }
+  }
+);
