@@ -1,9 +1,4 @@
-const withPlugins = require("next-compose-plugins");
-const optimizedImages = require("next-optimized-images");
-const withOffline = require("next-offline");
+/** @type {import('next').NextConfig} */
+const nextConfig = { output: "export" };
 
-module.exports = withPlugins([optimizedImages, withOffline], {
-  experimental: {
-    modern: true
-  }
-});
+module.exports = nextConfig;
