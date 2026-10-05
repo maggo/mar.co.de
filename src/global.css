@@ -18,7 +18,10 @@ body {
   height: 100%;
   margin: 0;
   color: white;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   line-height: 1.6667;
   -webkit-font-smoothing: antialiased;
   background: linear-gradient(45deg, #3080e8, #8cb8f2) center center no-repeat;

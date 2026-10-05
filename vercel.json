@@ -1,0 +1,4 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [{ "source": "/resume.pdf", "destination": "/static/resume.pdf" }]
+}

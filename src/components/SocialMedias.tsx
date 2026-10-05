@@ -1,14 +1,10 @@
 import styles from "./SocialMedias.module.css";
-import TwitterIcon from "../icons/twitter.svg?sprite";
-import GithubIcon from "../icons/github.svg?sprite";
+import { GithubIcon, TwitterIcon } from "./Icons";
 
 export const SocialMedias = () => (
   <ul className={styles.container}>
     <li>
-      <a
-        href="https://twitter.com/mediaquery"
-        title="I'm @mediaquery on twitter.com"
-      >
+      <a href="https://twitter.com/mediaquery" title="I'm @mediaquery on twitter.com">
         <TwitterIcon role="img" aria-hidden="true" className={styles.icon} />
         mediaquery
       </a>

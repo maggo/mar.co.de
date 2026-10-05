@@ -1,6 +1,10 @@
 .container {
   margin: 0 0 0.5em;
-  font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    Raleway,
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   text-align: center;
   line-height: 0.9;
 }
