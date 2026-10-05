@@ -7,24 +7,146 @@
     <meta name="description" content="This is my personal website" />
     <meta property="og:title" content="Hi! I'm Marco" />
     <meta property="og:description" content="This is my personal website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png" />
-    <link rel="manifest" href="/static/manifest.json" />
-    <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#3080e8" />
-    <link rel="shortcut icon" href="/static/icons/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#3080e8" />
-    <meta name="msapplication-config" content="/static/browserconfig.xml" />
     <meta name="theme-color" content="#3080e8" />
+    <link
+      rel="preload"
+      href="/fonts/raleway-400-v1.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="icon" href="/static/icons/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/static/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/static/manifest.json" />
+    <style>
+      @font-face {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("/fonts/raleway-400-v1.woff2") format("woff2");
+      }
+
+      html {
+        height: 100%;
+        font-size: 112.5%;
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        color: white;
+        font-family:
+          Helvetica Neue,
+          Helvetica,
+          sans-serif;
+        line-height: 1.6667;
+        -webkit-font-smoothing: antialiased;
+        background: #3080e8 linear-gradient(45deg, #3080e8, #8cb8f2) center center no-repeat;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:focus,
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .intro {
+        margin: 0 0 0.5em;
+        font-family:
+          Raleway,
+          Helvetica Neue,
+          Helvetica,
+          sans-serif;
+        text-align: center;
+        line-height: 0.9;
+      }
+
+      .intro-large,
+      .intro-small {
+        display: block;
+      }
+
+      .intro-large {
+        font-size: 11.11rem;
+        line-height: 0.8;
+      }
+
+      .intro-small {
+        font-size: 2.667rem;
+        line-height: 1;
+      }
+
+      .social {
+        margin: 0 0.5rem 1rem;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: max-content max-content;
+        justify-content: center;
+      }
+
+      .social-icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+        vertical-align: middle;
+        fill: currentColor;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <main>
+      <h1 class="intro">
+        <span class="intro-large">Hi!</span>
+        <span class="intro-small">I'm Marco</span>
+      </h1>
+      <ul class="social">
+        <li>
+          <a href="https://x.com/mediaquery" title="I'm @mediaquery on x.com">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+            mediaquery
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/maggo" title="I'm @maggo on github.com">
+            <svg
+              class="social-icon"
+              viewBox="0 0 4 4"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              aria-hidden="true"
+            >
+              <path
+                d="M1.999.051h-.001A2.008 2.008 0 0 0 0 2.049c0 .859.553 1.625 1.368 1.896.1.019.136-.043.136-.096l-.002-.34c-.557.121-.673-.267-.673-.267-.092-.231-.222-.293-.222-.293-.182-.124.014-.121.014-.121.199.014.306.206.306.206.178.304.467.217.581.166a.426.426 0 0 1 .127-.267c-.444-.05-.91-.222-.91-.988a.771.771 0 0 1 .206-.536.719.719 0 0 1 .018-.528c.074-.168.169-.055.55.205a1.91 1.91 0 0 1 1.001 0c.381-.26.548-.205.548-.205a.714.714 0 0 1 .02.528.771.771 0 0 1 .206.536c0 .768-.467.937-.912.986.071.062.135.184.135.37l-.002.548c0 .053.036.116.137.096A2.001 2.001 0 0 0 4 2.049 2.008 2.008 0 0 0 2.002.051h-.003"
+              />
+            </svg>
+            maggo
+          </a>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
